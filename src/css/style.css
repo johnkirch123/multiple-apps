@@ -1,0 +1,592 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+  @media (max-width: 900px) {
+    * {
+      font-size: 100%; } }
+  @media (max-width: 600px) {
+    * {
+      font-size: 95%; } }
+
+.header {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; }
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 100vh;
+  height: 100%;
+  padding: 10rem 8%;
+  background-color: #222; }
+
+.card {
+  width: 20rem;
+  border: 2px solid #333; }
+  .card__img {
+    height: 15rem;
+    width: 100%; }
+  .card__link {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #333;
+    margin: 2rem;
+    max-height: 30rem; }
+    .card__link:hover {
+      cursor: pointer; }
+  .card__info {
+    padding: 2rem; }
+
+.countdown__app {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  color: #fff;
+  background: url("https://images.unsplash.com/photo-1633596683562-4a47eb4983c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80") no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.countdown__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-bottom: 3rem; }
+  .countdown__container > div > p {
+    font-size: 2em;
+    margin-top: 3rem; }
+  .countdown__container > div > span {
+    font-size: 0.7em; }
+
+.countdown__header {
+  margin-top: 8rem; }
+
+.countdown__arrow {
+  cursor: pointer; }
+  .countdown__arrow--image {
+    filter: invert(100%);
+    height: 5rem;
+    width: 5rem; }
+
+.countdown__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%; }
+  .countdown__form--group {
+    display: flex;
+    padding: 2rem 0; }
+
+input {
+  font-size: 2rem;
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+  background: transparent;
+  width: 100%; }
+  input:focus {
+    outline: none; }
+
+#countdown__button {
+  margin: 0 auto; }
+
+.crypto {
+  font-size: 2em;
+  color: #fff;
+  background-color: #000;
+  min-height: 100vh;
+  height: 100%;
+  text-align: center;
+  padding-top: 8rem; }
+  .crypto__container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; }
+  .crypto__search {
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../img/bitcoin.jpg");
+    box-shadow: inset 0 0 7px 7px rgba(0, 0, 0, 0.7);
+    background-position: center;
+    background-size: cover;
+    height: 25rem;
+    padding: 5rem; }
+  .crypto__market {
+    font-size: 0.45em;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem; }
+  .crypto__card {
+    height: 3rem;
+    width: 100%;
+    font-size: 0.35em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 0 2rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.15);
+    background-color: #222; }
+    .crypto__card--rank {
+      margin-right: 0.5rem; }
+    .crypto__card--image {
+      height: 2rem;
+      width: 2rem;
+      background-color: rgba(255, 255, 255, 0.3); }
+    .crypto__card--data {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem; }
+    .crypto__card--aux-data-box {
+      font-size: 0.7em;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 40%; }
+
+.red {
+  color: #be2525; }
+
+.green {
+  color: #16d660; }
+
+#crypto__card--aux-data-coinranking-url {
+  font-size: 1em;
+  max-width: 5rem;
+  padding: 0.2rem 0.5rem;
+  margin: 0; }
+
+.quiz {
+  background-image: linear-gradient(to bottom right, rgba(11, 11, 85, 0.8), rgba(70, 11, 11, 0.8)), url("../img/question-mark.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+  padding-top: 8rem; }
+  .quiz__contain {
+    display: flex;
+    justify-content: center; }
+  .quiz__container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    justify-content: center;
+    color: white;
+    text-shadow: 4px 4px 8px #000; }
+  .quiz__header {
+    font-size: 4rem;
+    margin-bottom: 3rem; }
+  .quiz__score {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.8rem; }
+    .quiz__score--right {
+      color: #1fdb1f; }
+    .quiz__score--wrong {
+      color: red; }
+  .quiz__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem; }
+  .quiz__body--question {
+    font-size: 2.2em;
+    margin-bottom: 2rem; }
+  .quiz__body--answers {
+    margin-left: 45%; }
+    .quiz__body--answers-button-box {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin-bottom: 0.7rem;
+      font-size: 1.5rem; }
+      .quiz__body--answers-button-box > input {
+        width: 2rem; }
+  .quiz__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.3em;
+    flex-wrap: wrap; }
+    .quiz__form--group {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.5em;
+      padding: 3rem 0; }
+      .quiz__form--group-params {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; }
+      .quiz__form--group-param {
+        width: 100%;
+        padding-bottom: 1.5rem; }
+        .quiz__form--group-param > select {
+          font-size: 1em; }
+        .quiz__form--group-param > label {
+          margin: 0 0.5rem; }
+
+.answer {
+  font-size: 2em;
+  padding: 3rem; }
+
+#numOfQuestions {
+  text-align: center;
+  width: 50%;
+  margin-bottom: 3rem; }
+  #numOfQuestions::placeholder {
+    color: #ccc; }
+
+.recipe {
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../img/food.jfif");
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; }
+  .recipe__container {
+    width: 125%; }
+  .recipe__area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5rem; }
+  .recipe__card {
+    width: 20%;
+    min-width: 20rem;
+    margin: 2.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid #222; }
+    .recipe__card--title-box {
+      min-height: 4rem;
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 1rem; }
+    .recipe__card--image {
+      width: 100%;
+      background-size: cover; }
+  .recipe__details {
+    padding: 5rem;
+    width: 80%;
+    margin: 5rem auto;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px 8px rgba(0, 0, 0, 0.2); }
+    .recipe__details--name {
+      font-size: 4em;
+      padding: 2rem 10rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 4px solid white;
+      text-align: center; }
+    .recipe__details--image {
+      width: 60%;
+      padding: 3rem;
+      min-width: 40rem; }
+    .recipe__details--info-box {
+      display: flex;
+      justify-content: start;
+      border: 3px solid white;
+      background-color: rgba(255, 255, 255, 0.1);
+      width: 100%;
+      min-width: 40rem; }
+      .recipe__details--info-box > p {
+        font-size: 1.5em;
+        padding: 1rem 4%;
+        width: 33%;
+        margin: auto; }
+    .recipe__details--ingredients {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      margin-left: 2rem;
+      width: 100%; }
+      .recipe__details--ingredients-header {
+        font-size: 3em;
+        align-self: center;
+        padding: 2rem;
+        text-decoration: underline; }
+      .recipe__details--ingredients-item {
+        display: flex;
+        width: 100%;
+        padding: 0.3rem 0;
+        font-size: 1.5em; }
+      .recipe__details--ingredients-image {
+        border: 1px solid black;
+        width: 5rem;
+        height: 5rem;
+        background-color: white;
+        margin-right: 1rem; }
+      .recipe__details--ingredients-measurements {
+        margin: auto 0; }
+
+.todo {
+  background-color: #222;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; }
+  .todo__container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10rem;
+    color: white;
+    font-size: 3rem; }
+  .todo__form {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5rem; }
+    .todo__form--button {
+      padding: 0.5rem 1.5rem;
+      width: 35%;
+      color: #222;
+      background-color: white;
+      font-size: 1.2rem; }
+  .todo__item {
+    font-size: 0.6em;
+    border: 1px solid white;
+    margin: 0.2rem 0;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .todo__item--date {
+      font-size: 0.7em; }
+    .todo__item--text-complete {
+      text-decoration: line-through; }
+    .todo__item--text:hover, .todo__item--text-complete:hover {
+      cursor: pointer; }
+
+.button:hover {
+  cursor: pointer; }
+
+body {
+  background-color: #ddd;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4); }
+
+*::selection {
+  color: #000; }
+
+.app {
+  width: 480px;
+  background: #ddd;
+  box-shadow: -6px -6px 9px white, 6px 6px 9px rgba(0, 0, 0, 0.07), inset -6px -6px 9px rgba(0, 0, 0, 0.07), inset 6px 6px 9px white;
+  margin: 2rem auto;
+  border-radius: 10%;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 10rem;
+  font-size: 2em; }
+  @media (max-width: 600px) {
+    .app {
+      height: 100vh;
+      width: 100vw;
+      margin: 0;
+      padding-top: 10rem; } }
+
+.search__box {
+  box-shadow: 6px 6px 9px 0 rgba(0, 0, 0, 0.05), -6px -6px 9px white;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  border-radius: 5%;
+  transition: all 0.1s ease-in-out; }
+
+.search__box:active {
+  transform: translateY(2px);
+  box-shadow: inset 6px 6px 9px 0 rgba(0, 0, 0, 0.05), inset -6px -6px 9px white; }
+
+#search-box,
+#search-box:focus,
+#search-box::placeholder {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.2em;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  padding: 0.3rem;
+  caret-color: #ccc; }
+
+.icon__image {
+  height: 12rem;
+  width: 12rem;
+  margin-left: -1rem;
+  margin-top: 2rem;
+  background: #ccc;
+  box-shadow: -4px -4px 15px white, inset 9px 9px 18px rgba(0, 0, 0, 0.07), inset -9px -9px 18px rgba(0, 0, 0, 0.07), 1px 4px 4px white;
+  padding: 1rem;
+  border-radius: 25%; }
+
+.weather {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .weather__temp {
+    font-size: 3.5em; }
+  .weather__conditions {
+    margin-left: -1rem;
+    font-size: 1.5em; }
+  .weather__box--aux {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; }
+  .weather__sun-state {
+    font-size: 0.8em; }
+
+.icon__aux {
+  height: 3rem;
+  width: 3rem; }
+
+.weather__temp--aux {
+  font-size: 0.8em; }
+
+.weather__conditions--aux {
+  font-size: 0.8em; }
+
+.icon__sun {
+  height: 2rem;
+  width: 2rem; }
+
+.date__time {
+  padding-top: 0.5rem; }
+
+.location {
+  margin-bottom: 0.5rem;
+  font-size: 2em; }
+
+.date {
+  margin-bottom: -0.5rem; }
+
+@keyframes downwardMovement {
+  0%,
+  100% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(5px); } }
+
+@keyframes scaleOnHover {
+  0%,
+  100% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); } }
+
+@keyframes rotateUp {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(180deg); } }
+
+@keyframes rotateDown {
+  0% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+@keyframes show {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes hide {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.button__white--outline {
+  color: white;
+  background-color: transparent; }
+  .button__white--outline, .button__white--outline:link, .button__white--outline:visited {
+    text-decoration: none;
+    padding: 0.5em 2em;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    font-size: 2em;
+    margin-top: 3em;
+    width: 50%;
+    min-width: min-content;
+    border: 3px white solid;
+    cursor: pointer; }
+  .button__white--outline:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.3); }
+  .button__white--outline:active, .button__white--outline:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.search {
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5rem; }
+  .search__title {
+    font-size: 1em;
+    color: white; }
+
+.center {
+  margin: 0 auto; }
+
+.fadeOut {
+  animation: hide 1s forwards; }
+
+.fadeIn {
+  animation: show 1s forwards; }
+
+.show {
+  animation: show 0.3s ease-in;
+  opacity: 1; }
+
+.hide {
+  animation: hide 0.3s ease-out;
+  opacity: 0; }
+
+.rotateDown {
+  animation: rotateDown 0.5s forwards; }
+
+.rotateUp {
+  animation: rotateUp 0.5s forwards; }
+
+.remove {
+  display: none; }
